@@ -2,15 +2,14 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [inputValue, setInputValue] = useState("");
-
-  const handleInputValue = (event)=>{
-    setInputValue(event.target.value)
+  const[showText,setShowText] = useState(true);
+  const toggleText = ()=>{
+    setShowText(!showText)
   }
   return (
     <div className="App">
-      <input type="text" onChange={handleInputValue}></input>
-      <h1>{inputValue}</h1>
+      <button onClick={toggleText}>show/hide</button>
+      { showText && <h1>This is a header</h1>}
     </div>
   );
 }
