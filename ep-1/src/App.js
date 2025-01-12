@@ -2,11 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const name = <h1>Saeed</h1>;
+  const user = <div>
+    <h1>Saeed</h1>
+    <h2>32</h2>
+  </div>
+
   return (
     <div className="App">
-      {name}
-      {name}
+      {user}
     </div>
   );
 }
