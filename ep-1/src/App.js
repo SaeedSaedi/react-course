@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <h1>{age}</h1>
       <button onClick={()=> setAge(age+1)}>Increase age</button>
+      <button onClick={()=> setAge(age-1)}>Decrease age</button>
     </div>
   );
 }
