@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -6,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <GetNameComponent name="Saeed" age={32} />
+      <GetNameComponent name="Ali" age={20} />
     </div>
   );
 }
