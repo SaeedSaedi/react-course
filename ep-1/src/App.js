@@ -1,23 +1,18 @@
-import {User} from "./User";
-import './App.css';
+import "./App.css";
 
 function App() {
-  const users = [
-    {name:"saeed",age:32},
-    {name:"ali",age:33},
-    {name:"mamad",age:31},
-  ]
+  let age = 0;
 
+  const increaseAge = () => {
+    age = age + 1
+    console.log(age)
+  }
   return (
     <div className="App">
-      {users.map((user,index)=>{
-        return <User key={index} name={user.name} age={user.age} />
-      })}
+      <h1>{age}</h1>
+      <button onClick={increaseAge}>Increase age</button>
     </div>
   );
 }
 
-
-
 export default App;
-
