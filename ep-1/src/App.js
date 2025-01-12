@@ -1,3 +1,4 @@
+import {User} from "./User";
 import './App.css';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="App">
       {users.map((user,index)=>{
-        return <h1 key={index}>{user.name} : {user.age}</h1>
+        return <User key={index} name={user.name} age={user.age} />
       })}
     </div>
   );
