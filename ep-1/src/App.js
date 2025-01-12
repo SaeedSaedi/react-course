@@ -1,16 +1,17 @@
 import './App.css';
 
 function App() {
-  const age = 20;
-  if(age > 20)
-    return (
-      <div className="App">
-        <GetNameComponent name="Saeed" age={32} />
-        <GetNameComponent name="Ali" age={20} />
-      </div>
-    );
-  else
-    return <div><h1>Forbidden</h1></div>
+  const age = 21;
+
+  return (
+    <div className="App">
+      <GetNameComponent name="Saeed" age={32} />
+      {age > 20 ? <h1>Enter Site</h1>: <h1>Forbidden</h1>}
+      {age === 20 && <h1>Age is 20</h1>}
+
+      <button type="submit" className={age > 20 ? "success":"warning"}>Click here</button>
+    </div>
+  );
 }
 
 //Component
