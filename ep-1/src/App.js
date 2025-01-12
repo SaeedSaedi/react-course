@@ -5,17 +5,17 @@ function App() {
 
   return (
     <div className="App">
-      <GetNameComponent />
+      <GetNameComponent name="Saeed" age={32} />
     </div>
   );
 }
 
 //Component
-const GetNameComponent = () => {
+const GetNameComponent = (props) => {
   return (
     <div>
-      <h1>Saeed</h1>
-      <h2>32</h2>
+      <h1>{props.name}</h1>
+      <h2>{props.age}</h2>
     </div>
   )
 }
