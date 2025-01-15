@@ -15,7 +15,7 @@ const SubmitForm = () => {
       .required(),
     password2: yup
       .string()
-      .oneOf([yup.ref("password1")])
+      .oneOf([yup.ref("password1"),"پسورد یکسان نیست"])
       .required(),
   });
   const {
