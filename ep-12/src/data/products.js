@@ -1,6 +1,6 @@
 import mobile from "../assets/mobile.jpg";
 import laptop from "../assets/laptop.jpg";
-import camera from "../assets/camera.jpg";
+import camera from "../assets/camera.png";
 import denim from "../assets/denim.jpg";
 import shoes from "../assets/shoes.jpg";
 
